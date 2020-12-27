@@ -1,7 +1,10 @@
-/* Colour Theme (Orange): #cf6d17*/
+/*-------------------------------*/
+/* Colour Theme: */
+/* https://www.color-hex.com/color-palette/21196 */
+/*-------------------------------*/
 
 /*-------------------------------*/
-/* BASIC SETUP*/
+/* BASIC SETUP */
 /*-------------------------------*/
 
 
@@ -21,7 +24,7 @@ html {
 }
 
 /*-------------------------------*/
-/* REUSABLE COMPONENTS*/
+/* REUSABLE COMPONENTS */
 /*-------------------------------*/
 
 .row {
@@ -29,16 +32,67 @@ html {
     margin: 0 auto;
 }
 
+section {
+    padding: 80px;
+    margin: 0;
+}
+
 /*---- HEADINGS ----*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
 
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
     font-size: 450%;
-    font-weight: 300;
-    letter-spacing: 1px;
     word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #556677;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 107%;
+    margin-bottom: 15px;
+}
+
+.box {
+    padding: 1%;
+}
+
+/*---- PARAGRAPHS ----*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
 }
 
 /*---- BUTTONS ----*/
@@ -56,21 +110,37 @@ h1 {
 
 .btn-full:link,
 .btn-full:visited  {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+    background-color: #556677;
+    border: 1px solid #556677;
     color: white;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #e67e22;
+    border: 1px solid #223355;
     color: white;
 }
 
 .btn:hover,
 .btn:active {
-    background-color: #cf6d17;
+    background-color: #223355;
+}
+
+/*---- ICONS ----*/
+
+.big-icon {
+    font-size: 250%;
+    text-align: center;
+    color: #556677;
+    margin-bottom: 10px;
+}
+
+/* ---- Feature Texts ----*/
+
+.feature-text {
+    font-size: 0.92rem;
+    text-align: center;
 }
 
 /*-------------------------------*/
@@ -123,23 +193,5 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #cf6d17;
-}
-
-/*-------------------------------*/
-/* ICONS */
-/*-------------------------------*/
-
-.feature-icons {
-    font-size: 50px;
-    text-align: center;
-}
-
-/*-------------------------------*/
-/* THANGS */
-/*-------------------------------*/
-
-.feature-text {
-    font-size: 1rem;
-    text-align: center;
+    border-bottom: 2px solid 	#6688bb;
 }
