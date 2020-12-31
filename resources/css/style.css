@@ -60,6 +60,7 @@ h2 {
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 100px;
     letter-spacing: 1px;
 }
 
@@ -214,7 +215,6 @@ header {
 }
 
 .meal-showcase li {
-    display: block;
     float: left;
     width: 25%;
 }
@@ -237,4 +237,44 @@ header {
 .meal-photo img:hover {
     opacity: 1;
     transform: scale(1.03);
+}
+
+/*-------------------------------*/
+/* PARTNERS */
+/*-------------------------------*/
+
+.section-features {
+    padding: 0;
+}
+
+.uber-logo {
+    text-align: center;
+}
+
+.fantuan-logo {
+    text-align: center;
+}
+
+.imageBox {
+    width: 100%;
+    display:block;
+    opacity: 0.65;
+    overflow: hidden;
+}
+.imageBox:hover {
+    opacity: 1;
+    z-index: 1000;
+    width:100%;
+    transform: scale(1.15);
+    position:relative;
+}
+
+.imageCol {
+    margin:0;
+    width:25%;
+    overflow:hidden;
+}
+
+.imageRow {
+    overflow:hidden;
 }
