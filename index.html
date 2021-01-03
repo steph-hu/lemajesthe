@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
@@ -25,7 +29,7 @@
             <div class="hero-text-box">
                 <h1>MAJESTHÉ</h1>
                 <a class="btn btn-full" href="#">MajesThé Restaurant</a>
-                <a class="btn btn-ghost" href="#">Bar MajesThé</a>
+                <a class="btn btn-ghost" href="#" id="hero-ghost-btn">Bar MajesThé</a>
             </div>
         </header>
 
@@ -333,7 +337,7 @@
                             <label for="message">Drop us a line</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Your message to us!"></textarea>
+                            <textarea name="message" id="message" placeholder="Your message to us!"></textarea>
                         </div>
                     </div>
                     <div class="row">
@@ -349,7 +353,30 @@
                 </form>
             </div>
         </section>
-
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Anroid App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/LeMajesthe/" target="_blank"><ion-icon name="logo-facebook" class="logo-facebook"></ion-icon></a></li>
+                        <li><a href="https://www.instagram.com/lemajesthe/" target="_blank"><ion-icon name="logo-instagram" class="logo-instagram"></ion-icon></a></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2021 by MajesThé. All rights reserved.
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
 
