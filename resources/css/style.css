@@ -1,6 +1,6 @@
 /*-------------------------------*/
 /* Colour Theme: */
-/* https://www.color-hex.com/color-palette/21196 */
+/* https://coolors.co/3d5a80-98c1d9-e0fbfc-ee6c4d-293241 */
 /*-------------------------------*/
 
 /*-------------------------------*/
@@ -67,7 +67,7 @@ h2 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #556677;
+    background-color: #EE6C4D;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -115,21 +115,22 @@ h3 {
 
 .btn-full:link,
 .btn-full:visited  {
-    background-color: #556677;
-    border: 1px solid #556677;
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
     color: white;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #223355;
-    color: white;
+    border: 1px solid #e67e22;
+    color: #e67e22;
 }
 
 .btn:hover,
 .btn:active {
-    background-color: #223355;
+    background-color: #9e422a;
+    color: white;
 }
 
 /*---- ICONS ----*/
@@ -137,15 +138,44 @@ h3 {
 .big-icon {
     font-size: 250%;
     text-align: center;
-    color: #556677;
+    color: #e67e22;
     margin-bottom: 10px;
 }
 
-/* ---- Feature Texts ----*/
+.small-icon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ---- FEATURE TEXTS ----*/
 
 .feature-text {
     font-size: 0.92rem;
     text-align: center;
+}
+
+/* ---- LINKS ----*/
+
+a:link,
+a:active {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+}
+
+a:hover,
+a:active {
+    color:black;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
 }
 
 /*-------------------------------*/
@@ -157,6 +187,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -198,7 +229,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid 	#6688bb;
+    border-bottom: 2px solid #e67e22;
 }
 
 /*-------------------------------*/
@@ -209,42 +240,42 @@ header {
     padding: 0;
 }
 
-.meal-showcase {
-    list-style: none;
-    width: 100%
-}
-
-.meal-showcase li {
-    float: left;
-    width: 25%;
-}
-
-.meal-photo {
+.imageBox {
     width: 100%;
-    margin: 0;
-    overflow: hidden;
-    background: black;
-}
-
-.meal-showcase img {
+    display: block;
     opacity: 0.65;
+    overflow: hidden;
+}
+.imageBox:hover {
+    opacity: 1;
+    z-index: 1000;
     width: 100%;
-    height: auto;
-    transform: scale(1.15);
-    transition: transform 0.7s, opacity 0.7s;
+    transform: scale(1.11);
+    position: relative;
+    transition: opacity 0.7s, transform 0.7s;
 }
 
-.meal-photo img:hover {
-    opacity: 1;
-    transform: scale(1.03);
+.imageCol {
+    margin: 0;
+    width: 25%;
+    overflow: hidden;
 }
+
+.imageRow {
+    overflow: hidden;
+}
+
 
 /*-------------------------------*/
 /* PARTNERS */
 /*-------------------------------*/
 
-.section-features {
-    padding: 0;
+.section-partners {
+    background-color: #f4f4f4;
+}
+
+.section-partners a {
+    border-bottom: transparent;
 }
 
 .uber-logo {
@@ -255,26 +286,116 @@ header {
     text-align: center;
 }
 
-.imageBox {
+
+
+/*-------------------------------*/
+/* CITY FEATURES */
+/*-------------------------------*/
+
+.box img {
     width: 100%;
-    display:block;
-    opacity: 0.65;
-    overflow: hidden;
-}
-.imageBox:hover {
-    opacity: 1;
-    z-index: 1000;
-    width:100%;
-    transform: scale(1.15);
-    position:relative;
+    height: auto;
+    margin-bottom: 15px;
 }
 
-.imageCol {
-    margin:0;
-    width:25%;
-    overflow:hidden;
+.city-feature {
+    margin-bottom: 5px;
 }
 
-.imageRow {
-    overflow:hidden;
+/*-------------------------------*/
+/* REVIEWS */
+/*-------------------------------*/
+
+.section-reviews {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+blockquote:before {
+    content: "\201C";
+    display: block;
+    font-size: 300%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 2%;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite {
+    display: block;
+    margin-top: 45px;
+    font-size: 90%;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*-------------------------------*/
+/* PLANS */
+/*-------------------------------*/
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-details {
+    list-style: none;
+
+}
+
+.plan-box {
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-details li{
+    padding: 5px 0;
 }
