@@ -57,6 +57,15 @@
     }
     .city-feature { font-size: 105%;}
 
+    #hero-ghost-btn,
+    #name,
+    #email,
+    #find-us,
+    #message { 
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
 }
 
 /* Small phones: from 0px to 480px */
@@ -73,7 +82,12 @@
         margin-bottom: 5px;
     }
     .contact-form { width: 100%; }
-
+    .social-links { 
+        margin-top: 15px;
+        margin-left: 15px;
+        float: left;
+    }
+    .footer-nav { margin-left: 15px; }
 
 }
 
